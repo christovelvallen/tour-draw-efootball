@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'eFootball Sans';
+  src: url('../fonts/eFootballSans-Regular.eot');
+  src: local('eFootball Sans Regular'), local('eFootballSans-Regular'),
+    url('../fonts/eFootballSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/eFootballSans-Regular.woff2') format('woff2'),
+    url('../fonts/eFootballSans-Regular.woff') format('woff'),
+    url('../fonts/eFootballSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'eFootball Stencil';
+  src: url('../fonts/eFootballStencil-Regular.eot');
+  src: local('eFootball Stencil Regular'), local('eFootballStencil-Regular'),
+    url('../fonts/eFootballStencil-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/eFootballStencil-Regular.woff2') format('woff2'),
+    url('../fonts/eFootballStencil-Regular.woff') format('woff'),
+    url('../fonts/eFootballStencil-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'eFootball Stencil', 'eFootball Sans', sans-serif;
+  }
+}
